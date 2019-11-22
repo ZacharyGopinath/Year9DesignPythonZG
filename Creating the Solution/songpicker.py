@@ -11,3 +11,9 @@ if catinput == "baroque":
 if catinput == "classical":
 	catinput == ["Mozart Sonata 16", "Beethoven Sonata Pathetique", "Elgar Cello Concerto"]
 	print(random.choice(catinput))
+
+0	
+
+1	
+
+2

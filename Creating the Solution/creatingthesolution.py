@@ -20,4 +20,4 @@ check.config(anchor = tk.W)
 check.pack(fill = tk.BOTH)
 
 root.mainloop()
-print("End Program")
+print("Program Ended")

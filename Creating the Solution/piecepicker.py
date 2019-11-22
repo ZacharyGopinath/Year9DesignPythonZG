@@ -2,7 +2,7 @@
 import random
 print("This program will help you decide which piece to listen to")
 
-input = input("Category(Baroque, Classical, Romantic):")
+input = input("Category(Baroque, Classical, Romantic")
 
 if input == "Baroque":
 	input(category) == "Bach Praeludium 1, Vivaldi Concerto for 2 Violins, Bach Johanne's Passion, Bach Mattew's Passion"
