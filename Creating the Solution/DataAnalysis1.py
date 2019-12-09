@@ -1,0 +1,1 @@
+data = open("randomDataRAW.txt, "r");

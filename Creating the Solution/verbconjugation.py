@@ -2,9 +2,14 @@ import tkinter as tk
 #Latin Verb Conjugator, asks for 2 inputs (pronoun and verb), then 
 #conjugated according to the verb ending
 
+def verb():
+	output.insert(tk.END, "Verb")
+	output.config(state = "disabled", height = 10, width = 20, bg = "#243c6a", fg = "#FFFFFF", 
+	font = ("avenir next medium", 11))
+def noun():
+	output.insert(tk.END, "Noun")
 
 def conjugate(*args):
-	#-et verbs
 	if pronoun == "ego" and verb[-2] == "e":
 		outputm.insert(tk.END, "Ego" + " " + verb[0:-1] + "o")
 	if pronoun == "tu" and verb[-2] == "e":
@@ -41,17 +46,19 @@ def conjugate(*args):
 		outputm.insert(tk.END, "Eum" + " " + verb[0:-1] + "t")
 
 	#esse
-	if pronoun == "ego" and verb == "est":
-		outputm.insert(tk.END, "Ego" + " " + "sum")
-	if pronoun == "tu" and verb == "est":
-		outputm.insert(tk.END, "Tu" + " " + "es")
-	if pronoun == "eam" and verb == "est":
-		outputm.insert(tk.END, "Eam" + " " + "est")
+	if pronoun == "ego" and verb == "esse":
+		outputm.insert("Ego" + " " + "sum")
+	if pronoun == "tu" and verb == "esse":
+		outputm.insert("Tu" + " " + "es")
+	if pronoun == "eam" and verb == "esse":
+		outputm.insert("Eam" + " " + "esse")
 	if pronoun == "eum" and verb == "est":
-		outputm.insert(tk.END, "Eum" + " " + "est")
-
+		outputm.insert("Eum" + " " + "est")
+	
+	
 #GUI
 root = tk.Tk()
+root.geometry("600x300")
 root.Title = "Latin Word Conjugator"
 
 title = tk.Label(text = "Latin Word Conjugator")
@@ -66,14 +73,15 @@ verb = tk.Entry()
 verb.config()
 verb.grid(row = 2)
 
-button = tk.Button(text = "Click to Conjugate", borderwidth = 2)
-button.config(bg = "#243c6a", command = conjugate, fg = "#FFFFFF")
+button = tk.Button()
+button.config(bg = "#243c6a", command = conjugate, fg = "#FFFFFF", 
+	text = "Click to Conjugate")
 button.grid(row = 3)
 
 outputm = tk.Text()
-outputm.config(state = "normal", font = ("avenir next medium", 10))
+outputm.config(state = "normal", font = ("avenir next medium", 11))
 outputm.grid(row = 4)
 
 root.mainloop()
-outputm.insert("Done")
+print("DONE")
 
