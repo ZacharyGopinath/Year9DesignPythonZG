@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zack</title>
+</head>
+<body>
+      <input type="text" placeholder="Country..." name="search" id = "searchbar">
+      <button type="submit" onclick = "clicked()">SEARCH</button>
+
+     <div id = "results"></div>
+</body>
+<script>
+var countries = ["Canada","US","Germany","France", "Japan"];
+var eperc = [1,2,3,4,5];
+function clicked(){
+	var value = document.getElementById("searchbar").value.toLowerCase();
+	for (i = 0; i < countries.length; i++){
+		if (countries[i].toLowerCase() === value){
+			console.log(eperc[i])
+			return;
+			}
+		}
+	document.getElementById("results").innerHTML = "There is no data for this country at the moment. Countries with data are: Canada, US, Germany, France, and Japan";
+}
+</script>
+</html>

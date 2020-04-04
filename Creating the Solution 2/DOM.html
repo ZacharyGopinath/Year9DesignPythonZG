@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Binding</title>
+</head>
+<body>
+
+	<h1 id = "action">CLICK ME</h1>
+	<script>
+		obj = document.getElementById("action");
+		obj.onclick= fnc;
+
+		function fnc() {
+			console.log("BOUND!!")
+		}
+	</script>
+</body>
+</html>

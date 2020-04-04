@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Demontration Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	body {margin: 0;}
+
+	ul.topnav {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	ul.topnav li {float: left;}
+
+	ul.topnav li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+	ul.topnav li a.active {background-color: #4CAF50;}
+
+	ul.topnav li button:hover:not(.active) {background-color: #111;}
+
+	ul.topnav li button.active {background-color: #4CAF50;}
+
+	ul.topnav li button {
+	  display: block;
+	  color: #111;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+
+	ul.topnav li.right {float: right;}
+
+	@media screen and (max-width: 600px) {
+	  ul.topnav li.right, 
+	  ul.topnav li {float: none;}
+	}
+
+
+	.infoa {
+			height:220;
+			width: 455px;
+			overflow: hidden;
+		}
+		.infob {
+			height:500px;
+			width:455px;
+			float:left;
+		}
+
+		#info1 {
+		
+			background-color: red;
+
+		}
+		#info2 {
+		
+			background-color: blue;
+
+		}
+		#info3 {
+		
+			background-color: orange;
+
+	</style>
+</head>
+<body>
+	
+	<div id = "info1" class = "infob">
+		<p> Paragraph 1 </p>
+	</div>
+
+	<div id = "info2" class = "infob">
+		<p> Paragraph 2.</p>
+	</div>
+
+	<div id = "info3" class = "infob">
+		<p> Paragraph 3 </p>
+	</div>
+
+</body>
+<script type="text/javascript">
+	console.log("Line 1")
+	console.log("Line 2")
+	console,log(document.getElementById("info1"))
+
+
+</script>
+</html>
