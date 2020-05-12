@@ -1,0 +1,60 @@
+body{
+	margin:0px;
+}
+
+.parallax1 {
+			background:#2196f3;
+		    position: relative;
+		    height: 300px;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    overflow: hidden;
+		    background-attachment: fixed;
+		    text-align: center;
+		    color:#FFF;
+		    text-shadow: 1px 1px 1px #333;
+		}
+.fadein{
+	animation: fadeAndScale .3s ease-in;
+	transform-origin: center bottom;
+	
+}
+		@keyframes fadeAndScale {
+			from{
+				opacity:0;
+				transform: scale3d(0.8, 0.8, 1);
+			}
+			to{
+				opacity:1;
+				transform: scale3d(1,1,1);
+			}
+		}
+
+.parallax2 {
+			
+			background:#a9f403;
+		    position: relative;
+		    height: 450px;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    overflow: hidden;
+		    background-attachment: fixed;
+		    text-align: center;
+		    font-size: 50px;
+		    color:#1d87da;
+		    text-shadow: 1px 1px 1px #333;
+		}
+
+.parallax3 {
+			
+			background:#f403a9;
+		    position: relative;
+		    height: 450px;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    overflow: hidden;
+		    background-attachment: fixed;
+		    text-align: center;
+		    color:#03f4c7;
+		    text-shadow: 1px 1px 1px #333;
+		}
