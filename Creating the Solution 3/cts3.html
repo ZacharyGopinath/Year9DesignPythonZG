@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Medical Form Website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <center><h1>Medical Form Website</h1></center>
+
+    <center><button type="button" class="btn btn-primary" onclick="tableEdit()">Primary</button></center>
+
+    <div class="container">
+	  <h2>Patient Information</h2>
+	  <p>Find information regarding your patient's name, age, weight, and medical contition(s)</p>                                                                                      
+	  <div class="table-responsive">          
+	  <table class="table">
+	    <thead>
+	      <tr>
+	        <th>#</th>
+	        <th>Firstname</th>
+	        <th>Lastname</th>
+	        <th>Age</th>
+	        <th>Weight (lbs)</th>
+	        <th>Contition(s)</th>
+	      </tr>
+	    </thead>
+	    <tbody id="tbody">
+	      <tr>
+	        <td>1</td>
+	        <td>John</td>
+	        <td>Smiths</td>
+	        <td>35</td>
+	        <td>150</td>
+	        <td>None</td>
+	      </tr>
+	      <tr>
+	      	<td>2</td>
+	        <td>Joe</td>
+	        <td>Johnson</td>
+	        <td>76</td>
+	        <td>122</td>
+	        <td>Asthma</td>
+	   	 </tr>
+	    </tbody>
+	  </table>
+	  </div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+    	function tableEdit(){
+    	console.log("works");
+	 	var newRow = document.createElement('tr')
+		// store a variable that gets the addHere id
+		var addHere = document.getElementById('tbody')
+		// add the newly created div into the addHere id tag
+		addHere.appendChild(newRow)
+    </script>
+  </body>
+
+</html>
